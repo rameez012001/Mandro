@@ -90,7 +90,8 @@
     #contact .contact-info-wrapper,
     #awards .awards-wrap .awards-inner,
     #skills .skills-infos,
-    #home .container-wrap img {
+    #home .container-wrap img,
+    #blog .blog-wrap .blog-inner {
         margin-left: 0;
     }
     #services,
@@ -98,7 +99,8 @@
     #skills,
     #awards,
     #contact,
-    #about {
+    #about,
+    #blog {
         padding-right: 0;
         padding-left: 0;
     }
@@ -162,7 +164,8 @@
     #awards .awards-wrap .awards-inner .awards-lists {
         flex: 1;
     }
-    #awards .awards-wrap .awards-inner .awards-lists li {
+    #awards .awards-wrap .awards-inner .awards-lists li,
+    #blog .blog-wrap .blog-inner .blog-lists li {
         padding-right: 0;
     }
     #awards .awards-wrap .awards-inner .awards-years {
@@ -196,7 +199,7 @@
         -webkit-text-stroke-width: 0;
         -webkit-text-stroke-color: transparent;
     }
-    #services, #portfolio, #skills, #awards, #about,
+    #services, #portfolio, #skills, #awards, #about,#blog
     #home {
         padding-bottom: 0;
     }
@@ -230,6 +233,12 @@
     }
     .blog-grid-wrapper {
         padding-bottom: 70px;
+    }
+    #blog .blog-wrap .blog-inner .blog-years {
+        padding: 0 50px;
+    }
+    #blog .blog-wrap .blog-inner .blog-arrows ul{
+        padding: 0 15px;
     }
 }
 
@@ -288,12 +297,14 @@
     #skills .skills-infos .skills-lists {
         padding: 50px;
     }
-    #awards .awards-wrap .awards-inner .awards-lists {
+    #awards .awards-wrap .awards-inner .awards-lists,
+    #blog .blog-wrap .blog-inner .blog-lists {
         padding-top: 50px;
         padding-bottom: 50px;
         padding-right: 5px;
     }
-    #awards .awards-wrap .awards-inner {
+    #awards .awards-wrap .awards-inner,
+    #blog .blog-wrap .blog-inner {
         padding: 0 20px;
     }
     #contact .contact-info-wrapper {
