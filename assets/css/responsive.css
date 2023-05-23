@@ -121,6 +121,10 @@
         padding: 0 50px 0 50px;
         display: flex;
     }
+    #blog .blog-wrap .blog-inner{
+        padding: 0 50px 0 50px;
+        display: flex;
+    }
     #home .home-content {
         right: 20px;
     }
@@ -164,11 +168,18 @@
     #awards .awards-wrap .awards-inner .awards-lists {
         flex: 1;
     }
+    #blog .blog-wrap .blog-inner .blog-lists{
+        flex: 1;
+        
+    }
     #awards .awards-wrap .awards-inner .awards-lists li,
     #blog .blog-wrap .blog-inner .blog-lists li {
         padding-right: 0;
     }
     #awards .awards-wrap .awards-inner .awards-years {
+        padding: 0 50px;
+    }
+    #blog .blog-wrap .blog-inner .blog-years{
         padding: 0 50px;
     }
     #contact .contact-info-wrapper .contact-infos {
@@ -234,11 +245,8 @@
     .blog-grid-wrapper {
         padding-bottom: 70px;
     }
-    #blog .blog-wrap .blog-inner .blog-years {
-        padding: 0 50px;
-    }
     #blog .blog-wrap .blog-inner .blog-arrows ul{
-        padding: 0 15px;
+        padding: 0 25px;
     }
 }
 
@@ -297,15 +305,27 @@
     #skills .skills-infos .skills-lists {
         padding: 50px;
     }
-    #awards .awards-wrap .awards-inner .awards-lists,
+    #awards .awards-wrap .awards-inner .awards-lists{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 5px;
+    }
     #blog .blog-wrap .blog-inner .blog-lists {
         padding-top: 50px;
         padding-bottom: 50px;
         padding-right: 5px;
     }
-    #awards .awards-wrap .awards-inner,
+    #awards .awards-wrap .awards-inner{
+        padding: 0 20px;
+    }
     #blog .blog-wrap .blog-inner {
         padding: 0 20px;
+    }
+    #blog .blog-wrap .blog-inner .blog-years{
+        gap: 55px;
+    }
+    #blog .blog-wrap .blog-inner .blog-arrows{
+        display: none;
     }
     #contact .contact-info-wrapper {
         flex-direction: column;
