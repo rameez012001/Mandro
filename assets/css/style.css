@@ -2080,7 +2080,7 @@ body,html {
     animation: beat 1.5s linear infinite 1s
 }
 /* blog1 when user click blog section */
-.blog-page-wrapper {
+.blog1-page-wrapper {
     pointer-events: auto;
     width: 100%;
     max-width: 800px;
@@ -2088,7 +2088,7 @@ body,html {
     margin-left: auto;
     position: relative;
 }
-.blog-page-wrapper::before {
+.blog1-page-wrapper::before {
     content: '';
     position: absolute;
     left: 0;

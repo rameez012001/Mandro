@@ -18,6 +18,9 @@
     .page-wrapper {
         margin: 0 auto;
     }
+    .blog-page-wrapper {
+        margin: 0 auto;
+    }
     .show-hide-nav-btn {
         display: flex;
     }
@@ -91,7 +94,7 @@
     #awards .awards-wrap .awards-inner,
     #skills .skills-infos,
     #home .container-wrap img,
-    #blog .blog-wrap .blog-inner {
+    #blog .blog-wrap .blog-inner{
         margin-left: 0;
     }
     #services,
@@ -100,7 +103,8 @@
     #awards,
     #contact,
     #about,
-    #blog {
+    #blog,
+    #blog1 {
         padding-right: 0;
         padding-left: 0;
     }
@@ -247,6 +251,21 @@
     }
     #blog .blog-wrap .blog-inner .blog-arrows ul{
         padding: 0 25px;
+    }
+    #blog1{
+        padding-top: 120px;
+    }
+    #blog1 .container-wrap {
+        margin-bottom: 50px;
+    }
+    #blog1 .blog1-overlay{
+        background-color: var(--dark_color2);
+        padding: 24px 6px 24px 6px;
+        margin-bottom: 60px;
+        margin-left:0
+    }
+    #blog1-footer .line{
+        display: none;
     }
 }
 
