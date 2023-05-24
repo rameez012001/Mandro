@@ -191,7 +191,7 @@ img.block-left {
 }
 .nav-wrapper .nav-count {
     color: transparent;
-    font-size: 142px;
+    font-size: 110px;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: var(--primary_color);
     font-family: var(--font_anton);
@@ -202,6 +202,7 @@ img.block-left {
     transform: rotate(-90deg);
     display: block;
     transform-origin: left;
+    margin-bottom: 20px;
 }
 .nav-menu ul {
     display: flex;
@@ -2079,8 +2080,27 @@ body,html {
     animation: beat 1.5s linear infinite 1s
 }
 /* blog1 when user click blog section */
+.blog-page-wrapper {
+    pointer-events: auto;
+    width: 100%;
+    max-width: 800px;
+    max-width: 915px;
+    margin-left: auto;
+    position: relative;
+}
+.blog-page-wrapper::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0px;
+    background-color: var(--primary_color);
+    width: 100%;
+    /* height: calc(100% - 150px); */
+    height: 100%;
+    z-index: -1;
+}
 #blog1 {
-    padding: 305px 92px 85px 38px;
+    padding: 185px 92px 85px 38px;
 }
 #blog1 #blog1-con0{
     color: var(--dark_color2);
@@ -2133,6 +2153,11 @@ body,html {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 5px;    
+    cursor: pointer;
+}
+#blog1-footer h1:hover{
+    border-bottom: 2px solid #fff;
+    transition: border-bottom .3s ease-in;
 }
 #blog1-footer .line{
     width:318px;
