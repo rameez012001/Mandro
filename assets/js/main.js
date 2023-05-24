@@ -22,7 +22,7 @@
         skillFill();
         setActiveMenuItem();
     });
-
+    AOS.init();
 
     function skillProgressBars() {
         $(".animated-progress span").each(function () {
@@ -48,8 +48,6 @@
             });
         }
     }
-
-
 
     function menuControl() {
         $(document).ready(function() {
@@ -77,8 +75,8 @@
         $('#' + currentSection).addClass('section-active');
         if (c !== $('#' + currentSection).data("num")) {
             c = $('#' + currentSection).data("num");
-            $('.nav-count').animate({"opacity": '0', "right": "205px"}, 150, function () {
-                $(this).text(c).animate({"opacity": '1', "right": "213px"}, 150);
+            $('.nav-count').animate({"opacity": '1', "right": "217px"}, 150, function () {
+                $(this).text(c).animate({"opacity": '1', "right": "217px"}, 150);
             });
         }
     }
@@ -117,3 +115,6 @@
     }
 
 })(jQuery);
+function loading(){
+    document.querySelector('.loading').textContent='NO MORE';
+}

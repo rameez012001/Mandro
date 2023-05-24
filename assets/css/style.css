@@ -87,18 +87,18 @@ img.block-left {
     text-transform: uppercase;
     margin-bottom: 50px;
 }
-.section-head .content {
-    font-size: 16px;
-    color: #ffffff;
-    font-weight: 400;
-    margin: 0;
-}
-.section-head .content0{
+.section-head .content0,.section-body .content0{
     color: white;
     font-size: 22px;
     font-weight: 500;
     line-height: 36px;
     margin-bottom: 50px;
+}
+.section-head .content,.section-body .content {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    margin: 0;
 }
 .section-head .content strong {
     font-weight: 600;
@@ -862,7 +862,7 @@ img.block-left {
     box-shadow: none;
 }
 #contact .contact-info-wrapper .contact-form form .input-group input::placeholder {
-    color: #141E37;
+    color: var(--dark_color2);
 }
 #contact .contact-info-wrapper .contact-form form .input-group .submit-btn {
     background: var(--dark_color2);
@@ -2077,4 +2077,67 @@ body,html {
     content: "";
     -webkit-animation: beat 1.5s linear infinite 1s;
     animation: beat 1.5s linear infinite 1s
+}
+/* blog1 when user click blog section */
+#blog1 {
+    padding: 305px 92px 85px 38px;
+}
+#blog1 #blog1-con0{
+    color: var(--dark_color2);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 36px;
+}
+#blog1 .category{
+    margin-bottom: 50px;
+}
+#blog1 .category span{
+    color: #F9F9F9;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+#blog1 .category .span1{
+    margin-right: 17px;
+}
+#blog1 .category .span2{
+    margin-left: 17px;
+}
+.blog1-overlay{
+    background-color: var(--dark_color2);
+    padding: 54px 0 54px 112px;
+    margin-bottom: 60px;
+    margin-left:-138px
+}
+.blog1-overlay .content0{
+    color: rgb(251, 251, 251);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 36px;
+}
+#blog1 :nth-child(1){
+    padding: 0;
+}
+#blog1 .container-wrap{
+    margin-bottom: 100px;
+}
+#blog1 .content{
+    margin-bottom: 54px;
+}
+#blog1-footer{
+    display: flex;
+    justify-content: space-between;
+}
+#blog1-footer h1{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 5px;    
+}
+#blog1-footer .line{
+    width:318px;
+    height: 2px;
+    color: white;
+    background-color: #fff;
+    align-self: center;
 }
