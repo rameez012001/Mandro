@@ -323,7 +323,7 @@ img.block-left {
     font-weight: 500;
     cursor: pointer;
     bottom: 65px;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-out;
     animation-name: jump;
@@ -493,7 +493,7 @@ img.block-left {
 .portfolio-items-wrap .overlay-shape {
     position: absolute;
     left: -138px;
-    bottom: 0;
+    bottom: 1px;
     height: 100%;
     width: 100%;
     max-width: 697px;
@@ -1721,7 +1721,7 @@ body,html {
     width: 50%;
     height: 100%;
     background: #ffffff;
-    opacity: .95;
+    opacity: 1;
     transition: all 0s;
     will-change: transform
 }

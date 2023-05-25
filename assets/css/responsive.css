@@ -260,9 +260,12 @@
     }
     #blog1 .blog1-overlay{
         background-color: var(--dark_color2);
-        padding: 24px 6px 24px 6px;
+        padding: 32px 12px;
         margin-bottom: 60px;
         margin-left:0
+    }
+    #blog1 .blog1-overlay h2{
+        font-size: 14px;
     }
     #blog1-footer .line{
         display: none;
@@ -313,6 +316,7 @@
     .service-items-wrap .overlay-shape {
         width: 100%;
         left: -20px;
+        bottom: 20px;
     }
     .services-items .service-item img {
         width: 50px;

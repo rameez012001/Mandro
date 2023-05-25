@@ -4,7 +4,7 @@
     menuControl();
     setParallax();
     setActiveMenuItem();
-    setSlowScroll();
+    // setSlowScroll();
     skillFill();
     loadMoreProjects();
 
@@ -87,16 +87,16 @@
         // });
     }
     
-    function setSlowScroll() {
-        $('.nav-menu ul li a[href^="#"], a.button, .slow-scroll').on("click", function (e) {
-            if ($(this).attr('href') === '#') {
-                e.preventDefault();
-            } else {
-                $('html, body').animate({scrollTop: $(this.hash).offset().top}, 1500);
-                return false;
-            }
-        });
-    }
+    // function setSlowScroll() {
+    //     $('.nav-menu ul li a[href^="#"], a.button, .slow-scroll').on("click", function (e) {
+    //         if ($(this).attr('href') === '#') {
+    //             e.preventDefault();
+    //         } else {
+    //             $('html, body').animate({scrollTop: $(this.hash).offset().top}, 1500);
+    //             return false;
+    //         }
+    //     });
+    // }
 
     function loadMoreProjects() {
         let currentItems = 2;
