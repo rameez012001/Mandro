@@ -323,10 +323,11 @@ img.block-left {
     font-weight: 500;
     cursor: pointer;
     bottom: 65px;
-    animation-duration: 1.5s;
+    transition: opacity 1s ease;
+    /* animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-out;
-    animation-name: jump;
+    animation-name: jump; */
 }
 #home .scroll-down img {
     display: block;

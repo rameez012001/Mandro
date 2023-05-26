@@ -7,6 +7,7 @@
     // setSlowScroll();
     skillFill();
     loadMoreProjects();
+    scrollfade();
 
     $(window).on('load', function() {
         setTimeout(() => {
@@ -21,6 +22,7 @@
     $(window).on('scroll', function () {
         skillFill();
         setActiveMenuItem();
+        scrollfade();
     });
     AOS.init();
 
@@ -35,7 +37,18 @@
             $(this).text($(this).attr("data-progress") + "%");
           });
     }
-
+    const y1 = document.getElementById('scroll-down');
+    function scrollfade(){
+        window.addEventListener('scroll',()=>{
+            let x = window.pageYOffset;
+            if (x>=254){
+                y1.style.opacity = 0;
+            }
+            else{
+                y1.style.opacity = 1;
+            }
+        })
+    }
     function skillFill() {
         if ($('.skill-fill')[0]) {
             $(".skill-fill:not(.animation-done").each(function (i) {
@@ -113,6 +126,7 @@
         })
 
     }
+
 
 })(jQuery);
 function loading(){
