@@ -260,12 +260,9 @@
     }
     #blog1 .blog1-overlay{
         background-color: var(--dark_color2);
-        padding: 32px 12px;
+        padding: 32px 50px;
         margin-bottom: 60px;
         margin-left:0
-    }
-    #blog1 .blog1-overlay h2{
-        font-size: 14px;
     }
     #blog1-footer .line{
         display: none;
