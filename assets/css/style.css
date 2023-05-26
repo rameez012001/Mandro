@@ -781,7 +781,7 @@ img.block-left {
     align-items: center;
     justify-content: center;
     gap: 75px;
-    padding: 0 96px;
+    padding: 0 68px;
     z-index: 1;
 }
 #blog .blog-wrap .blog-inner .blog-years::before {
