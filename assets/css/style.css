@@ -324,10 +324,10 @@ img.block-left {
     cursor: pointer;
     bottom: 65px;
     transition: opacity 1s ease;
-    /* animation-duration: 1.5s;
+    animation-duration: .7s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-out;
-    animation-name: jump; */
+    animation-name: jump;
 }
 #home .scroll-down img {
     display: block;
@@ -337,11 +337,9 @@ img.block-left {
 @keyframes jump{
     from{
         bottom: 85px;
-        opacity: 1;
     }
     to{
         bottom: 65px;
-        opacity: .1;
     }
 }
 
