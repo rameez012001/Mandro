@@ -507,19 +507,25 @@ img.block-left {
     width: 50%;
     display: none;
 }
+.portfolio-items .portfolio-item-row {
+    width: 100%;
+}
 .portfolio-items .portfolio-item-col:nth-child(1),
 .portfolio-items .portfolio-item-col:nth-child(2) {
     display: block;
 }
-.portfolio-items .portfolio-item-col .portfolio-item .portfolio-img {
+.portfolio-items .portfolio-item-col .portfolio-item .portfolio-img,
+.portfolio-items .portfolio-item-row .portfolio-item .portfolio-img {
     position: relative;
     overflow: hidden;
 }
-.portfolio-items .portfolio-item-col .portfolio-item .portfolio-img img {
+.portfolio-items .portfolio-item-col .portfolio-item .portfolio-img img,
+.portfolio-items .portfolio-item-row .portfolio-item .portfolio-img img {
     display: block;
     width: 100%;
 }
-.portfolio-items .portfolio-item-col .portfolio-item .portfolio-img .portfolio-info {
+.portfolio-items .portfolio-item-col .portfolio-item .portfolio-img .portfolio-info,
+.portfolio-items .portfolio-item-row .portfolio-item .portfolio-img .portfolio-info{
     position: absolute;
     left: -200%;
     bottom: 24px;
@@ -529,12 +535,14 @@ img.block-left {
     opacity: 0;
     visibility: hidden;
 }
-.portfolio-items .portfolio-item-col .portfolio-item:hover .portfolio-img .portfolio-info {
+.portfolio-items .portfolio-item-col .portfolio-item:hover .portfolio-img .portfolio-info,
+.portfolio-items .portfolio-item-row .portfolio-item:hover .portfolio-img .portfolio-info {
     left: 0;
     opacity: 1;
     visibility: visible;
 }
-.portfolio-items .portfolio-item-col .portfolio-item .portfolio-img .portfolio-info h2 {
+.portfolio-items .portfolio-item-col .portfolio-item .portfolio-img .portfolio-info h2,
+.portfolio-items .portfolio-item-row .portfolio-item .portfolio-img .portfolio-info h2 {
     font-size: 18px;
     color: var(--dark_color2);
     font-weight: 500;
@@ -542,7 +550,8 @@ img.block-left {
     letter-spacing: 5px;
     margin: 0 0 10px;
 }
-.portfolio-items .portfolio-item-col .portfolio-item .portfolio-img .portfolio-info span {
+.portfolio-items .portfolio-item-col .portfolio-item .portfolio-img .portfolio-info span,
+.portfolio-items .portfolio-item-row .portfolio-item .portfolio-img .portfolio-info span {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
