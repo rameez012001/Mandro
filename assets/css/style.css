@@ -578,8 +578,43 @@ img.block-left {
     background: var(--primary_color);
     color: #ffffff;
 } */
-
-
+.portfolio-resume{
+    position: relative;
+    background-color:#f0deca;
+    color: #7a5932;
+    display: none;
+    animation-name: fadeup;
+    animation-duration: 2s;
+}
+.portfolio-resume nav button{
+    background-color: var(--primary_color);
+    padding: .5em;
+    margin: 1em;
+}
+.portfolio-resume .img-items{
+    display: flex;
+    justify-content: center;
+}
+.portfolio-resume .img-items img{
+    width: 563px;
+}
+.portfolio-resume .resume-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+}
+.portfolio-resume .resume-content>*{
+    margin: .7em;
+}
+@keyframes fadeup{
+    from{
+        top: 100px;
+    }
+    to{
+        top: 0px;
+    }
+}
 
 
 /* Skills */
@@ -1589,37 +1624,31 @@ img.block-left {
     }
 }
 
-@-webkit-keyframes imgLoading {
+@-webkit-keyframes l2r {
     0% {
-        height: 0%;
-        opacity: 1
+        width: 1px;
     }
 
     95% {
-        height: 100%;
-        opacity: 1
+        width: 100%;
     }
 
     100% {
-        height: 100%;
-        opacity: 0
+        width: 100%;
     }
 }
 
-@keyframes imgLoading {
+@keyframes l2r {
     0% {
-        height: 0%;
-        opacity: 1
+        width: 1px;
     }
 
     95% {
-        height: 100%;
-        opacity: 1
+        width: 100%;
     }
 
     100% {
-        height: 100%;
-        opacity: 0
+        width: 100%;
     }
 }
 
@@ -1660,7 +1689,30 @@ img.block-left {
 body,html {
     opacity: 1!important
 }
-
+#bg-loader,#fg-loader{
+    font-family: 'Outfit',;
+    font-size: 40px;
+    font-weight: 600;
+}
+#bg-loader{
+    color: #7486b189;
+}
+#fg-loader{
+    color: #141E37;
+    position: absolute;
+    top: 0px;
+    width: 0%;
+    overflow: hidden;
+    animation-name: l2r;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+#bg-loader span{
+    color: #7486b189;
+}
+#fg-loader span{
+    color: #D5C0A4;
+}
 #loftloader-wrapper {
     position: fixed;
     top: 0;
@@ -2033,48 +2085,7 @@ body,html {
     max-width: 90vw
 }
 
-#loftloader-wrapper.mandro-imgloading #loader img {
-    position: relative;
-    z-index: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0 auto
-}
 
-#loftloader-wrapper.mandro-imgloading #loader img {
-    opacity:.3;
-}
-
-#loftloader-wrapper.mandro-imgloading #loader .imgloading-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 3;
-    display: block;
-    width: 100%;
-    height: 0%;
-    transition: 0s;
-    overflow: hidden;
-    -webkit-animation: imgLoading 6s linear infinite;
-    animation: imgLoading 6s linear infinite;
-    will-change: height,opacity;
-    transform-origin: 0 100%
-}
-
-#loftloader-wrapper.mandro-imgloading #loader span {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 3;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    transition: 0s
-}
 
 #loftloader-wrapper.pl-beating #loader {
     width: 60px;

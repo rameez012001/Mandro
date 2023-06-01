@@ -12,7 +12,7 @@
     $(window).on('load', function() {
         setTimeout(() => {
             document.getElementById("loftloader-wrapper").classList.add("off")
-        }, 3000);
+        }, 5000);
     })
     $(window).on('resize', function () {
         skillFill();
@@ -127,8 +127,47 @@
 
     }
 
-
+    $(document).ready(function() {
+        $('.image-link').magnificPopup({
+          type: 'image',
+          closeBtnInside: true, // Show close button inside the lightbox
+          closeOnBgClick: true, // Close lightbox when clicking outside the image
+          callbacks: {
+            open: function() {
+              $('.mfp-close').addClass('custom-close-button'); // Add a custom class to the close button
+            }
+          }
+        });
+      });
 })(jQuery);
 function loading(){
     document.querySelector('.loading').textContent='NO MORE';
 }
+let pimg1 = document.getElementById('pimg1');
+function ponclick(){
+    let xx = document.getElementsByClassName('portfolio-img');
+    for(let ii=1;ii<=5;ii++){
+        xx[ii].style.opacity='0.5'
+    }
+    delayFunctionCall(none);
+}
+function delayFunctionCall(callback) {
+    setTimeout(callback, 1000); 
+}
+function none(){
+    let xx = document.getElementsByClassName('portfolio-img');
+    for(let ii=0;ii<=5;ii++){
+        xx[ii].style.display='none'
+    }
+    document.getElementsByClassName('loading')[0].style.display='none'
+    document.querySelector('.portfolio-resume').style.display='block';
+}
+function undo() {
+    let xx = document.getElementsByClassName('portfolio-img');
+    for (let ii = 0; ii <= 5; ii++) {
+      xx[ii].style.opacity = '1'; // Reset opacity to original value
+      xx[ii].style.display = 'block';
+    }
+    document.getElementsByClassName('loading')[0].style.display='block'
+    document.querySelector('.portfolio-resume').style.display = 'none'; // Hide the element
+  }

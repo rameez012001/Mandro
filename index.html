@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -20,10 +21,8 @@
     <div id="loftloader-wrapper" class="mandro-imgloading">
         <div class="loader-inner">
             <div id="loader">
-                <div class="imgloading-container">
-                    <span style="background-image: url(./assets/images/logo.svg);"></span>
-                </div>
-                <img width="560" height="192" data-no-lazy="1" class="skip-lazy" alt="loader image" src="./assets/images/logo.svg">
+                <h1 id="bg-loader">mandro<span>.</span></h1>
+                <h1 id="fg-loader">mandro<span>.</span></h1>
             </div>
         </div>
         <div class="loader-section section-fade"></div>
@@ -181,10 +180,23 @@
 
                 <div class="portfolio-items-wrap">
                     <div class="overlay-shape" data-jarallax-element="0 30"></div>
+                    <div class="portfolio-resume">
+                        <nav>
+                            <button onclick="undo()"><img src="./assets/images/left.png" alt=""></button>
+                        </nav>
+                        <div class="img-items">
+                            <img src="./assets/images/blog-1.jpeg" alt="">
+                        </div>
+                        <div class="resume-content">
+                            <h2>ART OF CAMERA</h2>
+                            <h4>Two ghostly white figures in coveralls and helmets are softly dancing lorem ipsum.</h4>
+                            <p>Cras pretium metus pulvinar ultricies auctor. In varius purus blandit sem mollis tristique. Curabitur sed lorem vel ligula pulvinar porttitor. Proin sit amet mauris eleifend amet, ullamcorper lacus. Vangelis rich in heavy atoms descended from astronomers dream of the mind’s cras pretium metus.</p>
+                        </div>
+                    </div>
                     <div class="portfolio-items">
                         <div class="portfolio-item-col">
                             <div class="portfolio-item">
-                                <div class="portfolio-img">
+                                <div class="portfolio-img" onclick="ponclick()">
                                     <img src="./assets/images/portfolio-1.jpeg" alt="Portfolio">
                                     <div class="portfolio-info">
                                         <h2>Design</h2>
@@ -195,7 +207,7 @@
 
                             <div class="portfolio-item">
                                 <div class="portfolio-img">
-                                    <img src="./assets/images/portfolio-2.jpeg" alt="Portfolio">
+                                    <a href="./assets/images/portfolio-2.jpeg"><img src="./assets/images/portfolio-2.jpeg" alt="Portfolio"></a>
                                     <div class="portfolio-info">
                                         <h2>Develop</h2>
                                         <span>Tristique</span>
@@ -248,7 +260,6 @@
                             </div>
                         </div>
                     </div>
-
                     <span class="load-more-btn loading" id="load-more-btn" onclick="loading()">Load More</span>
                 </div>
 
@@ -557,6 +568,8 @@
 
     <script src="./assets/js/jquery-3.6.4.js"></script>
     <script src="./assets/js/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="./assets/js/jarallax.js"></script>
