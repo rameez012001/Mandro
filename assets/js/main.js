@@ -143,18 +143,7 @@
 function loading(){
     document.querySelector('.loading').textContent='NO MORE';
 }
-let pimg1 = document.getElementById('pimg1');
-function ponclick(){
-    let xx = document.getElementsByClassName('portfolio-img');
-    for(let ii=1;ii<=5;ii++){
-        xx[ii].style.opacity='0.5'
-    }
-    delayFunctionCall(none);
-}
-function delayFunctionCall(callback) {
-    setTimeout(callback, 1000); 
-}
-function none(){
+function ponclick(){    
     let xx = document.getElementsByClassName('portfolio-img');
     for(let ii=0;ii<=5;ii++){
         xx[ii].style.display='none'
@@ -165,7 +154,6 @@ function none(){
 function undo() {
     let xx = document.getElementsByClassName('portfolio-img');
     for (let ii = 0; ii <= 5; ii++) {
-      xx[ii].style.opacity = '1'; // Reset opacity to original value
       xx[ii].style.display = 'block';
     }
     document.getElementsByClassName('loading')[0].style.display='block'

@@ -609,10 +609,10 @@ img.block-left {
 }
 @keyframes fadeup{
     from{
-        top: 100px;
+        left: -140px;
     }
     to{
-        top: 0px;
+        left: 0px;
     }
 }
 

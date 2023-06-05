@@ -185,6 +185,7 @@
     }
     #blog .blog-wrap .blog-inner .blog-years{
         padding: 0 50px;
+        gap: 75px;
     }
     #contact .contact-info-wrapper .contact-infos {
         padding-right: 20px;
