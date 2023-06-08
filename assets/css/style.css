@@ -56,6 +56,11 @@ body {
     height: calc(100% - 150px);
     z-index: -1;
 }
+strong:hover{
+    color: #131D36;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
 img {
     max-width: 100%;
 }
@@ -537,6 +542,7 @@ img.block-left {
     transition: .5s;
     opacity: 0;
     visibility: hidden;
+    cursor: pointer;
 }
 .portfolio-items .portfolio-item-col .portfolio-item:hover .portfolio-img .portfolio-info,
 .portfolio-items .portfolio-item-row .portfolio-item:hover .portfolio-img .portfolio-info {
@@ -574,10 +580,6 @@ img.block-left {
     transition: .5s;
     cursor: pointer;
 }
-/* .portfolio-items-wrap .load-more-btn:hover {
-    background: var(--primary_color);
-    color: #ffffff;
-} */
 .portfolio-resume{
     position: relative;
     background-color:#f0deca;
@@ -587,9 +589,10 @@ img.block-left {
     animation-duration: 2s;
 }
 .portfolio-resume nav button{
-    background-color: var(--primary_color);
     padding: .5em;
     margin: 1em;
+    background-color: transparent;
+    border: none;
 }
 .portfolio-resume .img-items{
     display: flex;
