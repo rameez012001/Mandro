@@ -2,9 +2,7 @@
     "use strict";
     skillProgressBars();
     menuControl();
-    setParallax();
     setActiveMenuItem();
-    // setSlowScroll();
     skillFill();
     loadMoreProjects();
     scrollfade();
@@ -94,23 +92,6 @@
         }
     }
 
-    function setParallax() {
-        // $('[data-jarallax-element]').jarallax({
-        //     speed: 0.2
-        // });
-    }
-    
-    // function setSlowScroll() {
-    //     $('.nav-menu ul li a[href^="#"], a.button, .slow-scroll').on("click", function (e) {
-    //         if ($(this).attr('href') === '#') {
-    //             e.preventDefault();
-    //         } else {
-    //             $('html, body').animate({scrollTop: $(this.hash).offset().top}, 1500);
-    //             return false;
-    //         }
-    //     });
-    // }
-
     function loadMoreProjects() {
         let currentItems = 2;
         $('#load-more-btn').innerHTML = 'hello';
@@ -159,3 +140,30 @@ function undo() {
     document.getElementsByClassName('loading')[0].style.display='block'
     document.querySelector('.portfolio-resume').style.display = 'none'; // Hide the element
   }
+var liElements = document.querySelectorAll(".awards-lists li");
+var h4Elements = document.querySelectorAll(".awards-years h4");
+
+liElements.forEach(function(li, index) {
+    li.addEventListener("mouseenter", function() {
+      h4Elements[index].style.transform = "translateX(-20px)";
+      h4Elements[index].style.color= "#d5c0a4";
+    });
+  
+    li.addEventListener("mouseleave", function() {
+      h4Elements[index].style.transform = "translateX(0)";
+      h4Elements[index].style.color= "#fff";
+    });
+  });
+
+var liElements1 = document.querySelectorAll(".blog-lists li");
+var h4Elements1 = document.querySelectorAll(".blog-years div");
+
+liElements1.forEach(function(li, index) {
+    li.addEventListener("mouseenter", function() {
+    h4Elements1[index].style.transform = "translateX(-20px)";
+    });
+
+    li.addEventListener("mouseleave", function() {
+    h4Elements1[index].style.transform = "translateX(0)";
+    });
+});

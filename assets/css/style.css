@@ -415,13 +415,6 @@ img.block-left {
 #about .about-bottom p {
     margin-bottom: 50px;
 }
-#about .about-bottom p a,
-#about .about-bottom p strong {
-    font-weight: 700;
-    text-decoration: underline;
-    color: #ffffff;
-    font-style: italic;
-}
 #about .about-bottom p:last-child {
     margin-bottom: 0;
 }
@@ -482,6 +475,10 @@ img.block-left {
 #services .service-bottom p strong {
     text-transform: uppercase;
     font-weight: 600;
+}
+#services .service-bottom p:hover strong{
+    color: #131D36;
+    transition: all ease-in .4s;
 }
 
 
@@ -687,9 +684,16 @@ img.block-left {
 #skills .skills-bottom {
     margin-top: 80px;
 }
+#skills .skills-bottom strong{
+    margin-right: 4px;
+}
 #skills .skills-bottom p {
     color: #ffffff;
     margin-bottom: 50px;
+}
+#skills .skills-bottom p:hover strong{
+    color: #131D36;
+    transition: all .3s ease-in;
 }
 #skills .skills-bottom p:last-child {
     margin-bottom: 0;
@@ -721,6 +725,7 @@ img.block-left {
     padding-bottom: 40px;
     margin-bottom: 40px;
     padding-right: 100px;
+    cursor: default;
 }
 #awards .awards-wrap .awards-inner .awards-lists li:last-child {
     margin-bottom: 0;
@@ -736,6 +741,10 @@ img.block-left {
     margin: 0 0 20px;
     line-height: 1.2;
 }
+#awards .awards-wrap .awards-inner .awards-lists li:hover h4,#awards .awards-wrap .awards-inner .awards-lists li:hover span{
+    transform: translateX(20px);
+    transition: all .3s ease-in;
+}
 #awards .awards-wrap .awards-inner .awards-lists li h4 {
     font-size: 16px;
     font-weight: 400;
@@ -743,6 +752,7 @@ img.block-left {
     opacity: 0.9;
     line-height: 1.2;
     margin: 0;
+    
 }
 #awards .awards-wrap .awards-inner .awards-years {
     position: relative;
@@ -753,6 +763,7 @@ img.block-left {
     gap: 110px;
     padding: 0 96px;
     z-index: 1;
+    cursor: default;
 }
 #awards .awards-wrap .awards-inner .awards-years::before {
     content: '';
@@ -770,6 +781,7 @@ img.block-left {
     margin: 0;
     line-height: 1.2;
     font-weight: 500;
+    transition: all .3s ease-in;
 }
 
 /* Blog */
@@ -792,6 +804,10 @@ img.block-left {
     padding-bottom: 40px;
     margin-bottom: 40px;
     padding-right: 100px;
+}
+#blog .blog-wrap .blog-inner .blog-lists li:hover h4,#blog .blog-wrap .blog-inner .blog-lists li:hover span{
+    transform: translateX(20px);
+    transition: all .3s ease-in;
 }
 #blog .blog-wrap .blog-inner .blog-lists li:last-child {
     margin-bottom: 0;
@@ -834,6 +850,9 @@ img.block-left {
     top: 0;
     background:#F9F9F9;
     z-index: -1;
+}
+#blog .blog-wrap .blog-inner .blog-years .year-wrapper{
+    transition: all .3s ease-in;
 }
 #blog .blog-wrap .blog-inner .blog-years .year-wrapper p{
     color: var(--dark_color2);
@@ -943,7 +962,9 @@ img.block-left {
     transition: .3s;
 }
 #contact .contact-info-wrapper .contact-form form .input-group .submit-btn:hover {
-    background: var(--primary_color);
+    background: transparent;
+    color: #131D36;
+    border: 2px solid #131D36;
 }
 
 #contact .contact-info-wrapper .contact-form form .input-group textarea {
@@ -2196,7 +2217,6 @@ body,html {
 }
 #blog1-footer h1:hover{
     border-bottom: 2px solid #fff;
-    transition: border-bottom .3s ease-in;
 }
 #blog1-footer .line{
     width:318px;
