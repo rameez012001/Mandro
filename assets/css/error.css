@@ -24,24 +24,27 @@ body{
 #e404 h1,h2{
     text-align: center;
     color: #141E37;
+    font-size: 26px;
+    font-weight: 600;
     font-family:'Poppins', sans-serif;
-    font-weight: 600 ;
+    letter-spacing: 5px;
 }
 #e404 button{
-    cursor: pointer;
-    background-color: #141E37;
-    font-family:  sans-serif;
-    color: #fff;
     outline: none;
     border: none;
     padding: 11px 32px;
-    font-weight: 600 ;
+    cursor: pointer;
+    font-weight: 600;
     font-size: 14px;
+    font-family:  sans-serif;
+    color: #fff;
+    background-color: #141E37;
 }
 #csoon h1{
     color: #141E37;
-    font-family:'Outfit',sans-serif;
     font-weight: 600 ;
+    font-size: 40px;
+    font-family:'Outfit';
 }
 #csoon h1 span{
     color: #D5C0A4 ;
