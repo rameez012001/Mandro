@@ -175,7 +175,7 @@ img.block-left {
 /* Menu */
 .nav-wrapper {
     position: fixed;
-    left: 0;
+    left: -100px;
     top: 0;
     height: 100vh;
     max-width: 40%;
@@ -203,7 +203,7 @@ img.block-left {
     letter-spacing: 0.03em;
     position: absolute;
     right: 213px;
-    bottom: -10px;
+    bottom: 0;
     transform: rotate(-90deg);
     display: block;
     transform-origin: left;
