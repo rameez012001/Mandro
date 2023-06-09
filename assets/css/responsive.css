@@ -268,15 +268,6 @@
     #blog1-footer .line{
         display: none;
     }
-    #portfolio .portfolio-items-wrap .portfolio-resume .resume-content{
-        padding: .5em;
-    }
-    #portfolio .portfolio-items-wrap .portfolio-resume .owl-carousel{
-        margin: 0 1em;
-    }
-    #portfolio .portfolio-items-wrap .portfolio-resume .owl-carousel .item img{
-        max-width: 400px;
-    }
 }
 
 @media (max-width: 580px) {
@@ -324,6 +315,9 @@
         width: 100%;
         left: -20px;
         bottom: 20px;
+    }
+    .portfolio-resume .resume-content{
+        padding: 2em;
     }
     .services-items .service-item img {
         width: 50px;
@@ -411,6 +405,9 @@
     }
     #home .scroll-down {
         right: -13px;
+    }
+    .portfolio-resume .resume-content h4{
+        text-align: left;
     }
 }
 
