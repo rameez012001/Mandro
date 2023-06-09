@@ -119,6 +119,28 @@
             }
           }
         });
+        $('.owl-carousel').owlCarousel({
+            items: 1, // Number of items to display at a time
+            center: true, // Center the active item
+            loop: true, // Enable continuous loop
+            margin:10,
+            autoplay: true, // Enable autoplay
+            autoplayTimeout: 2500, // Autoplay interval in milliseconds
+            autoplayHoverPause: true, // Pause autoplay on mouse hover
+            smartSpeed: 2000, // Speed of the sliding animation
+            dots: false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
       });
 })(jQuery);
 function loading(){

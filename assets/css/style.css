@@ -592,7 +592,7 @@ img.block-left {
     background-color: transparent;
     border: none;
 }
-.portfolio-resume .img-items{
+.portfolio-resume .owl-carousel .item{
     display: flex;
     justify-content: center;
 }
