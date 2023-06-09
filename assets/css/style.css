@@ -175,7 +175,7 @@ img.block-left {
 /* Menu */
 .nav-wrapper {
     position: fixed;
-    left: -160px;
+    left: -130px;
     top: 0;
     height: 100vh;
     max-width: 40%;
