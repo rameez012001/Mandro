@@ -18,7 +18,7 @@
     --dark_color: #131D36;
     --dark_color2: #141E37;
     --font_anton: 'Anton', sans-serif;
-    --font_poppins: 'Poppins', sans-serif;;
+    --font_poppins: 'Poppins', sans-serif;
 }
 
 *,*::before,*::after {
@@ -1730,7 +1730,7 @@ body,html {
     opacity: 1!important
 }
 #bg-loader,#fg-loader{
-    font-family: 'Outfit',;
+    font-family: 'Outfit';
     font-size: 40px;
     font-weight: 600;
 }
