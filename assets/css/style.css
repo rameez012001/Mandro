@@ -202,8 +202,7 @@ img.block-left {
     font-family: var(--font_anton);
     letter-spacing: 0.03em;
     position: absolute;
-    right: 213px;
-    bottom: 0;
+    bottom: 0px;
     transform: rotate(-90deg);
     display: block;
     transform-origin: left;
