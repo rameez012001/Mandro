@@ -1,11 +1,12 @@
 (function($) {
     "use strict";
     skillProgressBars();
+    scrollfade();
+    skillFill();
     menuControl();
     setActiveMenuItem();
-    skillFill();
     loadMoreProjects();
-    scrollfade();
+    AOS.init();
 
     $(window).on('load', function() {
         setTimeout(() => {
@@ -22,8 +23,7 @@
         setActiveMenuItem();
         scrollfade();
     });
-    AOS.init();
-
+    //functions
     function skillProgressBars() {
         $(".animated-progress span").each(function () {
             $(this).animate(
@@ -35,8 +35,8 @@
             $(this).text($(this).attr("data-progress") + "%");
           });
     }
-    const y1 = document.getElementById('scroll-down');
     function scrollfade(){
+        const y1 = document.getElementById('scroll-down');
         window.addEventListener('scroll',()=>{
             let x = window.pageYOffset;
             if (x>=254){
@@ -94,40 +94,39 @@
 
     function loadMoreProjects() {
         let currentItems = 2;
-        $('#load-more-btn').innerHTML = 'hello';
+        $('#load-more-btn').html('LOAD MORE');
 
-        $(document).on('click', '#load-more-btn', function() {
+        $(document).on('click', '#load-more-btn', function () {
             let boxes = [...document.querySelectorAll('.portfolio-items .portfolio-item-col')];
-            $('#load-more-btn').innerHTML = 'hello';
+            $('#load-more-btn').html('NO MORE');
 
-            for ( var i = currentItems; i < currentItems + 2; i++) {
+            for (var i = currentItems; i < currentItems + 2; i++) {
                 boxes[i].style.display = 'block';
             }
             currentItems += 2;
-        })
-
+        });
     }
 
     $(document).ready(function() {
         $('.image-link').magnificPopup({
           type: 'image',
-          closeBtnInside: true, // Show close button inside the lightbox
-          closeOnBgClick: true, // Close lightbox when clicking outside the image
+          closeBtnInside: true, 
+          closeOnBgClick: true,
           callbacks: {
             open: function() {
-              $('.mfp-close').addClass('custom-close-button'); // Add a custom class to the close button
+              $('.mfp-close').addClass('custom-close-button');
             }
           }
         });
         $('.owl-carousel').owlCarousel({
-            items: 1, // Number of items to display at a time
-            center: true, // Center the active item
-            loop: true, // Enable continuous loop
+            items: 1,
+            center: true,
+            loop: true, 
             margin:10,
-            autoplay: true, // Enable autoplay
-            autoplayTimeout: 2500, // Autoplay interval in milliseconds
-            autoplayHoverPause: true, // Pause autoplay on mouse hover
-            smartSpeed: 2000, // Speed of the sliding animation
+            autoplay: true,
+            autoplayTimeout: 2500,
+            autoplayHoverPause: true,
+            smartSpeed: 2000,
             dots: false,
             responsive:{
                 0:{
@@ -143,9 +142,6 @@
         })
       });
 })(jQuery);
-function loading(){
-    document.querySelector('.loading').textContent='NO MORE';
-}
 function ponclick(){    
     let xx = document.getElementsByClassName('portfolio-img');
     for(let ii=0;ii<=5;ii++){
@@ -160,7 +156,7 @@ function undo() {
       xx[ii].style.display = 'block';
     }
     document.getElementsByClassName('loading')[0].style.display='block'
-    document.querySelector('.portfolio-resume').style.display = 'none'; // Hide the element
+    document.querySelector('.portfolio-resume').style.display = 'none';
   }
 var liElements = document.querySelectorAll(".awards-lists li");
 var h4Elements = document.querySelectorAll(".awards-years h4");

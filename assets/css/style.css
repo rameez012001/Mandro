@@ -963,7 +963,7 @@ img.block-left {
     line-height: 1.2;
     padding: 16px 20px;
     transition: .3s;
-    border: 2px solid #fff;
+    border: 2px solid #131D36;
 }
 #contact .contact-info-wrapper .contact-form form .input-group .submit-btn:hover {
     background: transparent;
@@ -973,6 +973,9 @@ img.block-left {
 
 #contact .contact-info-wrapper .contact-form form .input-group textarea {
     height: 97px;
+}
+#contact .contact-info-wrapper .contact-form form .input-group textarea::placeholder {
+    color: #131D36;
 }
 
 

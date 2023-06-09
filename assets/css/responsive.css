@@ -1,5 +1,11 @@
-
-
+@media (max-width: 1754px) {
+    .blog-grid-wrapper .custom-row .left-col {
+        width: 70%;
+    }
+    .blog-grid-wrapper .custom-row .right-col {
+        width: calc(30% + 24px);
+    }
+}
 @media (max-width: 1565px) {
     .nav-wrapper {
         padding-left: 150px;
@@ -64,15 +70,6 @@
     }
 }
 
-@media (max-width: 1754px) {
-    .blog-grid-wrapper .custom-row .left-col {
-        width: 70%;
-    }
-    .blog-grid-wrapper .custom-row .right-col {
-        /* margin-right: -100px; */
-        width: calc(30% + 24px);
-    }
-}
 @media (max-width: 1080px) {
     body {
         background: var(--primary_color);
