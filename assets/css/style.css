@@ -1744,7 +1744,7 @@ body,html {
     width: 0%;
     overflow: hidden;
     animation-name: l2r;
-    animation-duration: 7s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 #bg-loader span{

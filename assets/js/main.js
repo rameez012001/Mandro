@@ -11,7 +11,7 @@
     $(window).on('load', function() {
         setTimeout(() => {
             document.getElementById("loftloader-wrapper").classList.add("off")
-        }, 5000);
+        }, 3400);
     })
     $(window).on('resize', function () {
         skillFill();
