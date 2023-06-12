@@ -1,5 +1,5 @@
 @media (max-width: 1754px) {
-    .blog-grid-wrapper .custom-row .left-col {
+    .blog-grid-wrapper .custom-row .left-col,.blog-grid-wrapper .custom-row .left-col1 {
         width: 70%;
     }
     .blog-grid-wrapper .custom-row .right-col {
@@ -77,7 +77,7 @@
     .breadcrumb-wrap {
         padding: 100px 0;
     }
-    .blog-grid-wrapper .custom-row .left-col {
+    .blog-grid-wrapper .custom-row .left-col,.blog-grid-wrapper .custom-row .left-col1{
         margin-left: 0;
     }
     .blog-grid-wrapper .custom-row .right-col {
@@ -232,7 +232,7 @@
         flex-wrap: wrap;
         gap: 70px;
     }
-    .blog-grid-wrapper .custom-row .left-col {
+    .blog-grid-wrapper .custom-row .left-col,.blog-grid-wrapper .custom-row .left-col1 {
         width: 100%;
     }
     .blog-grid-wrapper .custom-row .right-col {

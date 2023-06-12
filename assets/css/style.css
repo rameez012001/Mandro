@@ -41,7 +41,6 @@ body {
 .page-wrapper {
     pointer-events: auto;
     width: 100%;
-    max-width: 800px;
     max-width: 915px;
     margin-left: auto;
     position: relative;
@@ -1026,6 +1025,11 @@ img.block-left {
 .blog-grid-wrapper .custom-row .left-col {
     width: 787px;
     margin-left: -24px;
+    flex: none;
+}
+.blog-grid-wrapper .custom-row .left-col1{
+    width: 787px;
+    margin-left: -61px;
     flex: none;
 }
 .blog-grid-wrapper .custom-row .right-col {
@@ -2241,3 +2245,15 @@ body,html {
     background-color: #fff;
     align-self: center;
 }
+
+/* BLOG */
+.blog-page{
+    margin-left: 210px;
+}
+.blog-page::before{
+    top: 0;
+    height: 100%;
+}
+.blog-page .nav-wrapper{
+    padding-left: 250px;
+}   
