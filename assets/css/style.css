@@ -2248,12 +2248,12 @@ body,html {
 
 /* BLOG */
 .blog-page{
-    margin-left: 210px;
+    margin-left: 250px;
 }
 .blog-page::before{
     top: 0;
     height: 100%;
 }
 .blog-page .nav-wrapper{
-    padding-left: 250px;
+    padding-left: 185px;
 }   
