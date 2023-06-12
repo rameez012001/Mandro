@@ -2158,38 +2158,38 @@ body,html {
 
 
 /* BLOG PAGE when user click blog section */
-#blog1 {
+#blog-home {
     padding: 185px 92px 85px 38px;
 }
-#blog1 #blog1-con0{
+#blog-home #blog-home-con0{
     color: var(--dark_color2);
     font-size: 22px;
     font-weight: 600;
     line-height: 36px;
 }
-#blog1 .category{
+#blog-home .category{
     margin-bottom: 50px;
 }
-#blog1 .category span{
+#blog-home .category span{
     color: #F9F9F9;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 3px;
 }
-#blog1 .category .span1{
+#blog-home .category .span1{
     margin-right: 17px;
 }
-#blog1 .category .span2{
+#blog-home .category .span2{
     margin-left: 17px;
 }
-.blog1-page-wrapper {
+.blog-home-page-wrapper {
     pointer-events: auto;
     width: 100%;
     max-width: 915px;
     margin-left: auto;
     position: relative;
 }
-.blog1-page-wrapper::before {
+.blog-home-page-wrapper::before {
     content: '';
     position: absolute;
     left: 0;
@@ -2199,42 +2199,42 @@ body,html {
     height: 100%;
     z-index: -1;
 }
-.blog1-overlay{
+.blog-home-overlay{
     background-color: var(--dark_color2);
     padding: 54px 181px 54px 112px;
     margin-bottom: 60px;
     margin-left:-138px
 }
-.blog1-overlay .content0{
+.blog-home-overlay .content0{
     color: rgb(251, 251, 251);
     font-size: 22px;
     font-weight: 500;
     line-height: 36px;
 }
-#blog1 :nth-child(1){
+#blog-home :nth-child(1){
     padding: 0;
 }
-#blog1 .container-wrap{
+#blog-home .container-wrap{
     margin-bottom: 100px;
 }
-#blog1 .content{
+#blog-home .content{
     margin-bottom: 54px;
 }
-#blog1-footer{
+#blog-home-footer{
     display: flex;
     justify-content: space-between;
 }
-#blog1-footer h1{
+#blog-home-footer h1{
     font-family: Poppins;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 5px;    
     cursor: pointer;
 }
-#blog1-footer h1:hover{
+#blog-home-footer h1:hover{
     border-bottom: 2px solid #fff;
 }
-#blog1-footer .line{
+#blog-home-footer .line{
     width:318px;
     height: 2px;
     color: white;

@@ -101,7 +101,7 @@
     #contact,
     #about,
     #blog,
-    #blog1 {
+    #blog-home {
         padding-right: 0;
         padding-left: 0;
     }
@@ -250,19 +250,19 @@
     #blog .blog-wrap .blog-inner .blog-arrows ul{
         padding: 0 25px;
     }
-    #blog1{
+    #blog-home{
         padding-top: 120px;
     }
-    #blog1 .container-wrap {
+    #blog-home .container-wrap {
         margin-bottom: 50px;
     }
-    #blog1 .blog1-overlay{
+    #blog-home .blog-home-overlay{
         background-color: var(--dark_color2);
         padding: 32px 50px;
         margin-bottom: 60px;
         margin-left:0
     }
-    #blog1-footer .line{
+    #blog-home-footer .line{
         display: none;
     }
 }
