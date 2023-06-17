@@ -10,8 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" rel="stylesheet"> 
+    
+    <!-- animations -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- stylesheets -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
@@ -20,10 +28,8 @@
     <div id="loftloader-wrapper" class="mandro-imgloading">
         <div class="loader-inner">
             <div id="loader">
-                <div class="imgloading-container">
-                    <span style="background-image: url(./assets/images/logo.svg);"></span>
-                </div>
-                <img width="560" height="192" data-no-lazy="1" class="skip-lazy" alt="loader image" src="./assets/images/logo.svg">
+                <h1 id="bg-loader">mandro<span>.</span></h1>
+                <h1 id="fg-loader">mandro<span>.</span></h1>
             </div>
         </div>
         <div class="loader-section section-fade"></div>
@@ -52,7 +58,6 @@
                             <li><a href="#about">About</a></li>
                             <li><a href="#services">Services</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
-                            <!-- <li><a href="#awards">Awards</a></li> -->
                             <li><a href="#skills">Skills</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
@@ -80,7 +85,7 @@
                 </div>
 
                 <a href="#about" id="scroll-down" class="scroll-down slow-scroll">
-                    <img src="./assets/images/DownArrow.png" alt="Icon">
+                    <img src="./assets/images/down.svg" alt="Icon">
                 </a>
             </section>
 
@@ -119,7 +124,7 @@
                 </div>
                 <div class="about-bottom">
                     <p>A full stack allaround designer that tristique est placerat in massa consectetur <br>quisque lobortis vitae faucibus diam ac quam est lorem ipsum. Lorem ipsum dolor sit <br>amet, consectetur adipiscing elit. Viverra tristique placerat in massa consectetur <br>quisque. Nunc ac fames lectus in libero aliquet.</p>
-                    <p>Tristique amet volutpat nunc euismod mauris ollicitudin est sempe vulputate id in <br>nullam. <strong>Purus tincidunt</strong> maga ut turpis eu, eu enim. Nisl porttitor elit risus velit urnase <br>morbit mauris at proin laoreet lobortis urna aliquame.</p>
+                    <p>Tristique amet volutpat nunc euismod mauris ollicitudin est sempe vulputate id in <br>nullam. <strong><i><u>Purus tincidunt</u></i></strong> maga ut turpis eu, eu enim. Nisl porttitor elit risus velit urnase <br>morbit mauris at proin laoreet lobortis urna aliquame.</p>
                 </div>
             </section>
 
@@ -180,11 +185,29 @@
                 </div>
 
                 <div class="portfolio-items-wrap">
-                    <div class="overlay-shape" data-jarallax-element="0 30"></div>
+                    <div class="overlay-shape" data-jarallax-element="0 30" id="portfolio-resume"></div>
+                    <div class="portfolio-resume" >
+                        <nav>
+                            <button onclick="undo()"><img src="./assets/images/left1.svg" alt=""></button>
+                        </nav>
+                        <div class="img-items owl-carousel owl-theme" id="owl-carousel">
+                            <div class="item">
+                                <img src="./assets/images/blog-1.jpeg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./assets/images/blog-2.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="resume-content">
+                            <h2>ART OF CAMERA</h2>
+                            <h4>Two ghostly white figures in coveralls and helmets are softly dancing lorem ipsum.</h4>
+                            <p>Cras pretium metus pulvinar ultricies auctor. In varius purus blandit sem mollis tristique. Curabitur sed lorem vel ligula pulvinar porttitor. Proin sit amet mauris eleifend amet, ullamcorper lacus. Vangelis rich in heavy atoms descended from astronomers dream of the mind’s  sed lorem vel ligula pulvinar it amet mauris atscras pretium metus.Cras pretium metus pulvinar ultricies auctor. In varius purus blandit sem mollis tristique. Curabitur sed lorem vel ligula pulvinar porttitor. Proin sit amet mauris eleifend amet, ullamcorper lacus. Vangelis rich in heavy atoms descended from astronomers dream of the mind’s cras pretium metus.</p>
+                        </div>
+                    </div>
                     <div class="portfolio-items">
                         <div class="portfolio-item-col">
                             <div class="portfolio-item">
-                                <div class="portfolio-img">
+                                <div class="portfolio-img" onclick="ponclick()">
                                     <img src="./assets/images/portfolio-1.jpeg" alt="Portfolio">
                                     <div class="portfolio-info">
                                         <h2>Design</h2>
@@ -194,7 +217,7 @@
                             </div>
 
                             <div class="portfolio-item">
-                                <div class="portfolio-img">
+                                <div class="portfolio-img" onclick="ponclick()">
                                     <img src="./assets/images/portfolio-2.jpeg" alt="Portfolio">
                                     <div class="portfolio-info">
                                         <h2>Develop</h2>
@@ -205,8 +228,19 @@
                         </div>
                         <div class="portfolio-item-col">
                             <div class="portfolio-item">
-                                <div class="portfolio-img">
+                                <div class="portfolio-img" onclick="ponclick()">
                                     <img src="./assets/images/portfolio-3.jpeg" alt="Portfolio">
+                                    <div class="portfolio-info">
+                                        <h2>Branding</h2>
+                                        <span>Tristique</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item-row">
+                            <div class="portfolio-item">
+                                <div class="portfolio-img" onclick="ponclick()">
+                                    <a href="#portfolio-resume"><img src="./assets/images/blog1.png" alt="Portfolio"></a>
                                     <div class="portfolio-info">
                                         <h2>Branding</h2>
                                         <span>Tristique</span>
@@ -216,39 +250,28 @@
                         </div>
                         <div class="portfolio-item-col">
                             <div class="portfolio-item">
-                                <div class="portfolio-img">
-                                    <img src="./assets/images/portfolio-1.jpeg" alt="Portfolio">
+                                <div class="portfolio-img" onclick="ponclick()">
+                                    <a href="#portfolio-resume"><img src="./assets/images/portfolio-1.jpeg" alt="Portfolio"></a>
                                     <div class="portfolio-info">
                                         <h2>Design</h2>
                                         <span>Tristique</span>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="portfolio-item">
-                                <div class="portfolio-img">
-                                    <img src="./assets/images/portfolio-2.jpeg" alt="Portfolio">
-                                    <div class="portfolio-info">
-                                        <h2>Develop</h2>
-                                        <span>Tristique</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </div>    
                         <div class="portfolio-item-col">
                             <div class="portfolio-item">
-                                <div class="portfolio-img">
-                                    <img src="./assets/images/portfolio-3.jpeg" alt="Portfolio">
+                                <div class="portfolio-img" onclick="ponclick()">
+                                    <a href="#portfolio-resume"><img src="./assets/images/portfolio-2.jpeg" alt="Portfolio"></a>
                                     <div class="portfolio-info">
-                                        <h2>Branding</h2>
+                                        <h2>Develop</h2>
                                         <span>Tristique</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <span class="load-more-btn loading" id="load-more-btn" onclick="loading()">Load More</span>
+                    <span class="load-more-btn loading" id="load-more-btn"></span>
                 </div>
 
             </section>
@@ -379,7 +402,7 @@
                 </div>
 
                 <div class="skills-bottom">
-                    <p><strong>2010 - 2013</strong> Tristique amet volutpat nunc euismod mauris ollicitudin est sempe vulputate id in nullam. Purus tincidunt maga ut turpis eu, eu enim. Nisl porttitor elit risus velit urnase morbit mauris at proin laoreet lobortis urna aliquame.</p>
+                    <p><strong>2010 - 2013 </strong> Tristique amet volutpat nunc euismod mauris ollicitudin est sempe vulputate id in nullam. Purus tincidunt maga ut turpis eu, eu enim. Nisl porttitor elit risus velit urnase morbit mauris at proin laoreet lobortis urna aliquame.</p>
                     <p><strong>2013 - 2015</strong> Tristique amet volutpat nunc euismod mauris ollicitudin est sempe vulputate id in nullam. Purus tincidunt maga ut turpis eu, eu enim. Nisl porttitor elit risus velit urnase morbit mauris at proin laoreet lobortis urna aliquame.</p>
                     <p><strong>2015 - 2020</strong> Tristique amet volutpat nunc euismod mauris ollicitudin est sempe vulputate id in nullam. Purus tincidunt maga ut turpis eu, eu enim. Nisl porttitor elit risus velit urnase morbit mauris at proin laoreet lobortis urna aliquame.</p>
                     <p><strong>2020 - 2023</strong> Tristique amet volutpat nunc euismod mauris ollicitudin est sempe vulputate id in nullam. Purus tincidunt maga ut turpis eu, eu enim. Nisl porttitor elit risus velit urnase morbit mauris at proin laoreet lobortis urna aliquame.</p>
@@ -542,7 +565,7 @@
                                 <textarea name="message" id="message" placeholder="Message"></textarea>
                             </div>
                             <div class="input-group">
-                                <button class="theme-btn submit-btn" name="submit" type="submit">Send</button>
+                                <button class="theme-btn submit-btn " name="submit" type="submit">Send</button>
                             </div>
                         </form>
                     </div>
@@ -555,8 +578,9 @@
     
 
     <script src="./assets/js/jquery-3.6.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="./assets/js/jarallax.js"></script>
     <script src="./assets/js/jarallax-element.min.js"></script>
