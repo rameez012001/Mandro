@@ -12,6 +12,7 @@
     }
     .nav-wrapper .nav-count {
         font-size: 110px;
+        left: 328px
     }
 }
 @media (max-width: 1400px) {
