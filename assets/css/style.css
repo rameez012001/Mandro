@@ -202,7 +202,7 @@ img.block-left {
     letter-spacing: 0.03em;
     position: absolute;
     bottom: 0px;
-    left: 423px;
+    left: 540px;
     transform: rotate(-90deg);
     display: block;
     transform-origin: left;
@@ -2258,3 +2258,51 @@ body,html {
 .blog-page .nav-wrapper{
     padding-left: 185px;
 }   
+
+/* error and csoon styles */
+#error,#csoon{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5ebe2;
+}
+#error a{
+    text-decoration: none;
+}
+#error .message{
+    margin-bottom: 33px;
+}
+#error h1{
+    margin-top:10px ;
+}
+#error h1, #error h2{
+    text-align: center;
+    color: #141E37;
+    font-size: 26px;
+    font-weight: 600;
+    font-family:'Poppins', sans-serif;
+    letter-spacing: 5px;
+}
+#error button{
+    outline: none;
+    border: none;
+    padding: 11px 32px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    font-family:  sans-serif;
+    color: #fff;
+    background-color: #141E37;
+}
+#csoon h1{
+    color: #141E37;
+    font-weight: 600 ;
+    font-size: 40px;
+    font-family:'Outfit';
+}
+#csoon h1 span{
+    color: #D5C0A4 ;
+}
