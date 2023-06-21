@@ -5,6 +5,10 @@
     .blog-grid-wrapper .custom-row .right-col {
         width: calc(30% + 24px);
     }
+    .nav-wrapper .nav-count {
+        font-size: 110px;
+        left: 445px
+    }
 }
 @media (max-width: 1565px) {
     .nav-wrapper {
@@ -12,7 +16,7 @@
     }
     .nav-wrapper .nav-count {
         font-size: 110px;
-        left: 328px
+        left: 345px
     }
 }
 @media (max-width: 1400px) {
