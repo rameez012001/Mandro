@@ -93,17 +93,17 @@
     }
 
     function loadMoreProjects() {
-        let currentItems = 2;
+        // let currentItems = 2;
         $('#load-more-btn').html('LOAD MORE');
 
         $(document).on('click', '#load-more-btn', function () {
-            let boxes = [...document.querySelectorAll('.portfolio-items .portfolio-item-col')];
+            let boxes = [...document.querySelectorAll('.portfolio-items .portfolio-item-row:last-child')];
             $('#load-more-btn').html('NO MORE');
-
-            for (var i = currentItems; i < currentItems + 2; i++) {
-                boxes[i].style.display = 'block';
-            }
-            currentItems += 2;
+            boxes[0].style.display = 'flex';
+            // for (var i = currentItems; i < currentItems + 2; i++) {
+            //     boxes[i].style.display = 'block';
+            // }
+            // currentItems += 2;
         });
     }
 

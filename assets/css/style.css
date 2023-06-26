@@ -509,14 +509,13 @@ img.block-left {
 }
 .portfolio-items .portfolio-item-col {
     width: 50%;
-    display: none;
 }
 .portfolio-items .portfolio-item-row {
     width: 100%;
-}
-.portfolio-items .portfolio-item-col:nth-child(1),
-.portfolio-items .portfolio-item-col:nth-child(2) {
     display: block;
+}
+.portfolio-items .portfolio-item-row:last-child {
+    display: none;
 }
 .portfolio-items .portfolio-item-col .portfolio-item .portfolio-img,
 .portfolio-items .portfolio-item-row .portfolio-item .portfolio-img {
@@ -546,6 +545,13 @@ img.block-left {
     left: 0;
     opacity: 1;
     visibility: visible;
+}
+.portfolio-items .portfolio-item-row{
+    margin: 0;
+}
+.portfolio-items .portfolio-item-row .portfolio-item{
+    padding: 0;
+    margin: 0;
 }
 .portfolio-items .portfolio-item-col .portfolio-item .portfolio-img .portfolio-info h2,
 .portfolio-items .portfolio-item-row .portfolio-item .portfolio-img .portfolio-info h2 {
