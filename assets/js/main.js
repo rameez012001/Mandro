@@ -6,6 +6,7 @@
     menuControl();
     setActiveMenuItem();
     loadMoreProjects();
+    ponclick();
     AOS.init();
 
     $(window).on('load', function() {
@@ -93,20 +94,32 @@
     }
 
     function loadMoreProjects() {
-        let currentItems = 2;
+        // let currentItems = 2;
         $('#load-more-btn').html('LOAD MORE');
 
         $(document).on('click', '#load-more-btn', function () {
-            let boxes = [...document.querySelectorAll('.portfolio-items .portfolio-item-col')];
+            let boxes = [...document.querySelectorAll('.portfolio-items .portfolio-item-row:last-child')];
             $('#load-more-btn').html('NO MORE');
-
-            for (var i = currentItems; i < currentItems + 2; i++) {
-                boxes[i].style.display = 'block';
-            }
-            currentItems += 2;
+            boxes[0].style.display = 'flex';
+            // for (var i = currentItems; i < currentItems + 2; i++) {
+            //     boxes[i].style.display = 'block';
+            // }
+            // currentItems += 2;
         });
     }
-
+    function ponclick(){
+        let xx = document.getElementsByClassName('portfolio-img');
+        let yy = document.getElementsByClassName('portfolio-resume');
+        for(let i=0;i<xx.length;i++){
+            xx[i].addEventListener('click',()=>{
+                for(let j = 0; j < xx.length; j++){
+                    xx[j].style.display='none'
+                }
+                document.getElementsByClassName('loading')[0].style.display='none';
+                yy[i].style.display='block';
+            })
+        }
+    }
     $(document).ready(function() {
         $('.image-link').magnificPopup({
           type: 'image',
@@ -142,22 +155,20 @@
         })
       });
 })(jQuery);
-function ponclick(){    
-    let xx = document.getElementsByClassName('portfolio-img');
-    for(let ii=0;ii<=5;ii++){
-        xx[ii].style.display='none'
-    }
-    document.getElementsByClassName('loading')[0].style.display='none'
-    document.querySelector('.portfolio-resume').style.display='block';
-}
 function undo() {
     let xx = document.getElementsByClassName('portfolio-img');
-    for (let ii = 0; ii <= 5; ii++) {
-      xx[ii].style.display = 'block';
+    let yy = document.getElementsByClassName('portfolio-resume');
+
+    for (let ii = 0; ii < xx.length; ii++) {
+        xx[ii].style.display = 'block';
+        yy[ii].style.display = 'none';
     }
-    document.getElementsByClassName('loading')[0].style.display='block'
-    document.querySelector('.portfolio-resume').style.display = 'none';
-  }
+
+    let loading = document.getElementsByClassName('loading');
+    if (loading.length > 0) {
+        loading[0].style.display = 'block';
+    }
+}
 var liElements = document.querySelectorAll(".awards-lists li");
 var h4Elements = document.querySelectorAll(".awards-years h4");
 
